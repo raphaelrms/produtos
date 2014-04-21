@@ -35,9 +35,9 @@ production:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: d652bk0vir512k
-  host: ec2-54-197-241-95.compute-1.amazonaws.com
+  database: d393d89lb11eq7
+  host: ec2-54-204-37-92.compute-1.amazonaws.com
   pool: 5
   port: 5432
-  username: rsabbolktpzicw
-  password: fOKRkrdLKPS_xJOrYRDLsTaDY-
+  username: tprepjqavptpfn
+  password: SQOEErnq3NtrQY7Dr8VsXBcgMF

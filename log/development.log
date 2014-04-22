@@ -28119,3 +28119,278 @@ Processing by NoticiasController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
 Completed 200 OK in 162.6ms (Views: 71.4ms | ActiveRecord: 86.3ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 02:34:19 -0300
+Processing by ApplicationController#home as HTML
+  Rendered application/home.html.erb within layouts/application (15.6ms)
+Compiled animate.css  (2ms)  (pid 10797)
+Compiled bootstrap.min.css  (2ms)  (pid 10797)
+Compiled jquery.ketchup.css  (1ms)  (pid 10797)
+Compiled layout.css  (1ms)  (pid 10797)
+Compiled login.css  (1ms)  (pid 10797)
+Compiled themes.css  (5ms)  (pid 10797)
+Compiled dataTables/jquery.dataTables.bootstrap3.css  (236ms)  (pid 10797)
+Compiled jquery-tablesorter/theme.bootstrap.css  (1ms)  (pid 10797)
+Compiled token-input.css  (1ms)  (pid 10797)
+Compiled token-input-facebook.css  (1ms)  (pid 10797)
+Compiled application.css  (1160ms)  (pid 10797)
+Compiled jquery.js  (23ms)  (pid 10797)
+Compiled jquery_ujs.js  (2ms)  (pid 10797)
+Compiled bootstrap.js  (7ms)  (pid 10797)
+Compiled jquery.ketchup.js  (2ms)  (pid 10797)
+Compiled jquery.nested-fields.js  (1ms)  (pid 10797)
+Compiled jquery.maskedinput.js  (3ms)  (pid 10797)
+Compiled jquery-tablesorter/jquery.metadata.js  (1ms)  (pid 10797)
+Compiled jquery-tablesorter/jquery.tablesorter.js  (6ms)  (pid 10797)
+Compiled jquery-tablesorter/jquery.tablesorter.widgets.js  (4ms)  (pid 10797)
+Compiled jquery-tablesorter.js  (80ms)  (pid 10797)
+Compiled tinymce/preinit.js  (2ms)  (pid 10797)
+Compiled tinymce/tinymce.jquery.js  (139ms)  (pid 10797)
+Compiled tinymce/jquery.tinymce.js  (1ms)  (pid 10797)
+Compiled tinymce-jquery.js  (561ms)  (pid 10797)
+Compiled jquery.tokeninput.js  (6ms)  (pid 10797)
+Compiled forms.js  (1ms)  (pid 10797)
+Compiled home.js  (264ms)  (pid 10797)
+Compiled html5shiv.js  (1ms)  (pid 10797)
+Compiled jquery.ketchup.helpers.js  (79ms)  (pid 10797)
+Compiled jquery.ketchup.validations.js  (1ms)  (pid 10797)
+Compiled jquery.price_format.2.0.js  (1ms)  (pid 10797)
+Compiled noticia.js  (8ms)  (pid 10797)
+Compiled theme.js  (2ms)  (pid 10797)
+Compiled application.js  (1862ms)  (pid 10797)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  [1m[36mUser Load (4.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 3902.1ms (Views: 3694.3ms | ActiveRecord: 150.7ms)
+
+
+Started GET "/images/static-hero.png" for 127.0.0.1 at 2014-04-22 02:34:26 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/static-hero.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bola/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 02:34:59 -0300
+Processing by ApplicationController#home as HTML
+  Rendered application/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 55.6ms (Views: 52.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/static-hero.png" for 127.0.0.1 at 2014-04-22 02:35:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/static-hero.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bola/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 02:35:29 -0300
+Processing by ApplicationController#home as HTML
+  Rendered application/home.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 57.0ms (Views: 54.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/static-hero.png" for 127.0.0.1 at 2014-04-22 02:35:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/static-hero.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bola/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 02:35:33 -0300
+Processing by ApplicationController#home as HTML
+  Rendered application/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 54.5ms (Views: 51.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/static-hero.png" for 127.0.0.1 at 2014-04-22 02:35:36 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/static-hero.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bola/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 02:37:11 -0300
+Processing by ApplicationController#home as HTML
+  Rendered application/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 59.9ms (Views: 56.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/static-hero.png" for 127.0.0.1 at 2014-04-22 02:37:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/static-hero.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bola/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/slider-bg.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/images/slider/slide-left.png" for 127.0.0.1 at 2014-04-22 02:37:14 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/slider/slide-left.png"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bola/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bola/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)

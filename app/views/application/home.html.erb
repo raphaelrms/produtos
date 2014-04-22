@@ -156,54 +156,29 @@
   <div class="container">
     <div class="row header">
       <div class="col-md-12">
-        <h3>Blog</h3>
+        <h3>Para deixar você com água na boca</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <% if @noticias %>
-            <div class="noticia">
-              <ul class="list-unstyled">
-                <% @noticias.each do |noticia| %>
-                    <p>
-                    <li>
-                      <div class="col-md-6">
-                        <div class="box box-element">
-                          <div class="view">
-                            <h2 contenteditable="false"><%=noticia.titulo%></h2>
-                            <small contenteditable="false">Autor: <span class="autor"><%= noticia.autor %></span></small><br>
-                            <small contenteditable="false">Postado em: <%= l noticia.created_at.to_date %></small>
-                            <p><small></small></p>
-                            <p contenteditable="false"><%= noticia.corpo_resumido.html_safe %></p>
-                            <a class="btn" href="#" contenteditable="false"><%= link_to "[Saiba mais]", noticia %></a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    </p>
-                <% end %>
-              </ul>
-            </div>
-        <%end%>
-
-        <!--<div class="slideshow">-->
-          <!--<div class="btn-nav prev"><span class="glyphicon glyphicon-chevron-left"></span></div>-->
-          <!--<div class="btn-nav next"><span class="glyphicon glyphicon-chevron-right"></span></div>-->
-          <!--<div class="slide">-->
-            <!--<%#= image_tag 'presente.jpg', :alt => 'Imagem do brownie para presente'%>-->
-          <!--</div>-->
-          <!--<div class="slide">-->
-            <!--<%#= image_tag 'brownie-cholate.jpg', :alt => 'Imagem do brownie para presente'%>-->
-          <!--</div>-->
-          <!--<div class="slide active">-->
-            <!--<%#= image_tag 'presente.jpg', :alt => 'Imagem do brownie para presente'%>-->
-          <!--</div>-->
-        <!--</div>-->
+      <div class="col-md-12 slide-wrapper">
+      <div class="slideshow">
+          <div class="btn-nav prev"><span class="glyphicon glyphicon-chevron-left"></span></div>
+          <div class="btn-nav next"><span class="glyphicon glyphicon-chevron-right"></span></div>
+          <div class="slide">
+            <%= image_tag 'presente.jpg', :alt => 'Imagem do brownie para presente'%>
+          </div>
+          <div class="slide">
+            <%= image_tag 'brownie-cholate.jpg', :alt => 'Imagem do brownie para presente'%>
+          </div>
+          <div class="slide active">
+            <%= image_tag 'presente.jpg', :alt => 'Imagem do brownie para presente'%>
+          </div>
+        </div>
 
       </div>
     </div>
-  </div>
-</div>
+    </div>
+    </div>
 
 
 

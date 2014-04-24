@@ -245,22 +245,16 @@
         <h3>Visão Geral</h3>
         <ul>
           <li>
-            <a href="features.html">Features</a>
+            <a href="features.html">Sobre a empresa</a>
           </li>
           <li>
-            <a href="services.html">Services</a>
+            <a href="services.html">Produtos</a>
           </li>
           <li>
-            <a href="pricing.html">Pricing</a>
+            <a href="pricing.html">Preços</a>
           </li>
           <li>
-            <a href="support.html">Support</a>
-          </li>
-          <li>
-            <a href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="blog.html">Coming soon</a>
+            <a href="support.html">Contato</a>
           </li>
         </ul>
       </div>
@@ -297,3 +291,27 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $(".alert").delay(2000).fadeOut("slow", function () { $(this).remove(); });
+        $('#form-contato').ketchup();
+        $("#telefone_ddd").mask("(99)").blur(function(event) {
+            var target, phone, element;
+            var ddds =[21,22,24,27,28,11,12,13,14,15,16,17,18,19];
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+            ddd = target.value;
+            if((jQuery.inArray(parseInt(ddd.replace(/\D/g,"")),ddds) == 0)) {
+                $("#telefone").mask("99999-9999");
+            }else{
+                $("#telefone").mask("9999-9999");
+            }
+        });
+        $("#telefone").mask("9999-9999");
+        $(document).on('hidden.bs.modal', function () {
+            $(".ketchup-error").hide();
+        });
+
+    });
+
+
+</script>

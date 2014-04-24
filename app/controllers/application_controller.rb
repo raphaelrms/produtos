@@ -11,4 +11,8 @@ class ApplicationController < ActionController::Base
     @noticias = Noticia.paginate(:page => params[:page])
   end
 
+  def contato
+    redirect_to :root, :notice => "Sua mensagem foi enviada com sucesso. Aguarde nosso retorno."
+  end
+
 end

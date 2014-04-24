@@ -1,3 +1,4 @@
+#encoding: utf-8
 <header class="navbar navbar-inverse hero" role="banner">
   <div class="container">
     <!--######################################-->
@@ -38,13 +39,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            Contato<b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="pricing.html">Pricing charts</a></li>
-            <li><a href="charts.html">Comparison tables</a></li>
-          </ul>
+            <a data-toggle="modal" href="#novo-contato"  type="button">Contato</a>
         </li>
       </ul>
     </nav>
@@ -52,4 +47,4 @@
   </div>
 </header>
 
-
+<%= render "layouts/contato"%>

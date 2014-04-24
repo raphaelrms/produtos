@@ -1,19 +1,8 @@
 RailsPadrao::Application.routes.draw do
 
 
-  resources :categorias
-
-
-  resources :custos
 
   resources :arquivos
-
-
-  resources :cursos do
-    member do
-      get :download
-    end
-  end
 
 
   root :to => 'application#home'
@@ -75,5 +64,6 @@ RailsPadrao::Application.routes.draw do
 
   end
 
+  post 'contato' => 'application#contato', :as => 'contato'
 
 end

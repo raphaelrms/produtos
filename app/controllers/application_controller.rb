@@ -12,6 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def contato
+    ContatoMailer.contato(params)
     redirect_to :root, :notice => "Sua mensagem foi enviada com sucesso. Aguarde nosso retorno."
   end
 

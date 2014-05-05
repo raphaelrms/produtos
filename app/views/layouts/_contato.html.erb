@@ -25,7 +25,7 @@
             </div>
 
             <div class="form-group">
-              <%= label_tag :telefone_ddd, "Telefone:",:class => "col-xs-3 control-label" %>
+              <%= label_tag :telefone_ddd, "Celular:",:class => "col-xs-3 control-label" %>
               <div class="col-md-2">
                 <%= text_field_tag :telefone_ddd,nil,{:class => "form-control",:placeholder => "DDD"}%>
               </div>
@@ -35,10 +35,20 @@
             </div>
 
             <div class="form-group">
-              <%= label_tag :mensagem, "Mensagem:",:class => "col-xs-3 control-label" %>
+              <%= label_tag :assunto, "Assunto:",:class => "col-xs-3 control-label" %>
               <div class="col-md-7">
-                <%= text_area_tag :mensagem,nil,{:placeholder => "Digite sua mensagem", :class => "form-control", :style => "height: 117px;width:315px"}%>
+                <%= text_field_tag :assunto,nil,{:class => "form-control",:placeholder => "Assunto"}%>
               </div>
+            </div>
+
+            <div class="form-group">
+              <%= label_tag :mensagem, "Mensagem:",:class => "col-xs-3 control-label" %>
+              <span class="help-block" style="font-size: 11px;"><div class="col-xs-offset-5">Você pode digitar <span id="contador">2000</span> caracteres ainda.</div>
+              <div class="col-md-7">
+                <%= text_area_tag :mensagem,nil,{:placeholder => "Digite sua mensagem", :class => "form-control", :style => "height: 117px;width:315px", :maxlength => 2000}%>
+              </div>
+                  </span>
+
             </div>
 
 
@@ -54,3 +64,5 @@
     </div>
   </div>
 </div>
+
+

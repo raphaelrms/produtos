@@ -293,7 +293,7 @@
 </div>
 <script type="text/javascript">
     $( document ).ready(function() {
-        $(".alert").delay(2000).fadeOut("slow", function () { $(this).remove(); });
+        $(".alert").delay(4000).fadeOut("slow", function () { $(this).remove(); });
         $('#form-contato').ketchup();
         $("#telefone_ddd").mask("(99)").blur(function(event) {
             var target, phone, element;
@@ -307,8 +307,21 @@
             }
         });
         $("#telefone").mask("9999-9999");
+
         $(document).on('hidden.bs.modal', function () {
             $(".ketchup-error").hide();
+        });
+
+
+        $('#mensagem').keydown(function(event){
+            var Length = $(this).val().length;
+            var AmountLeft = 2000 - Length;
+            $('#contador').text(AmountLeft);
+            if(Length >= maxLen){
+                if (event.which != 8) {
+                    return false;
+                }
+            }
         });
 
     });

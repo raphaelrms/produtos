@@ -11,6 +11,6 @@ class ContatoMailer < ActionMailer::Base
       @telefone = params[:telefone_ddd] + params[:telefone]
       @mensagem = params[:mensagem]
       @assunto = "Contato - #{@nome} - #{@assunto}"
-      mail(:subject => @assunto, :date => Time.now).deliver
+      mail(:to => "contato@hummbrownies.com", :subject => @assunto, :date => Time.now).deliver
     end
 end

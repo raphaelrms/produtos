@@ -27,10 +27,10 @@
             <div class="form-group">
               <%= label_tag :telefone_ddd, "Celular:",:class => "col-xs-3 control-label" %>
               <div class="col-md-2">
-                <%= text_field_tag :telefone_ddd,nil,{:class => "form-control",:placeholder => "DDD"}%>
+                <%= text_field_tag :telefone_ddd,nil,{:class => "form-control",:placeholder => "DDD",:maxlength => 2}%>
               </div>
               <div class="col-md-4">
-                <%= text_field_tag :telefone,nil,{:class => "form-control",:placeholder => "Telefone"}%>
+                <%= text_field_tag :telefone,nil,{:class => "form-control",:placeholder => "Telefone", :pattern => "{1}"}%>
               </div>
             </div>
 

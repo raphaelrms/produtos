@@ -21,7 +21,6 @@ gem 'wkhtmltopdf-binary'
 gem 'wicked_pdf'
 #gem 'lazy_high_charts'
 gem 'masked_input-rails'
-gem "chartkick"
 gem 'cancan'
 gem 'tinymce-rails'
 gem 'jquery-tokeninput-rails'

@@ -13,7 +13,7 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: Projeto1_development
+  database: correiabastos_development
   pool: 5
   username: postgres
   password: tzzk7662
@@ -26,7 +26,7 @@ test:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: Projeto1_test
+  database: correiabastos_test
   pool: 5
   username: postgres
   password: tzzk7662
@@ -35,9 +35,9 @@ production:
   adapter: postgresql
   encoding: utf8
   reconnect: true
-  database: d393d89lb11eq7
-  host: ec2-54-204-37-92.compute-1.amazonaws.com
+  database: d250tniup9ofl4
+  host: ec2-54-221-206-165.compute-1.amazonaws.com
   pool: 5
   port: 5432
-  username: tprepjqavptpfn
-  password: SQOEErnq3NtrQY7Dr8VsXBcgMF
+  username: cpsoadbfyxbblc
+  password: u00edD6t_JMNJSl2JuF6kqV9Vy

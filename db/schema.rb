@@ -11,10 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140407004405) do
+ActiveRecord::Schema.define(:version => 20140412115708) do
 
   create_table "arquivos", :force => true do |t|
-    t.integer  "curso_id",             :null => false
     t.string   "descricao"
     t.string   "arquivo_file_name"
     t.string   "arquivo_content_type"
@@ -24,6 +23,43 @@ ActiveRecord::Schema.define(:version => 20140407004405) do
     t.datetime "updated_at",           :null => false
     t.integer  "anexo_id"
     t.string   "anexo_type"
+  end
+
+  create_table "categorias", :force => true do |t|
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "descricao"
+    t.string   "observacoes"
+  end
+
+  create_table "cursos", :force => true do |t|
+    t.string   "nome"
+    t.string   "descricao"
+    t.string   "ano"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "custos", :force => true do |t|
+    t.integer  "valor"
+    t.integer  "categoria_id",  :null => false
+    t.integer  "fase_id",       :null => false
+    t.string   "descricao"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "observacoes"
+    t.integer  "quantidade"
+    t.date     "dt_referencia"
+  end
+
+  create_table "fases", :force => true do |t|
+    t.string   "descricao"
+    t.integer  "curso_id",       :null => false
+    t.integer  "orcamento"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.date     "inicio_periodo"
+    t.date     "fim_periodo"
   end
 
   create_table "noticias", :force => true do |t|
